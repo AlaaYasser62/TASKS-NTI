@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 8px 18px;
+  background: #14231f;
+  color: #151515;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.site-header {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+}
+
+.site-header h1 {
+  margin: 0 0 18px;
+  color: #c49a52;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1;
+  text-shadow: 0 1px 2px #000;
+}
+
+.site-header p {
+  margin: 0;
+  color: #c7c1b5;
+  font-size: clamp(17px, 2vw, 23px);
+}
+
+.horse-board {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.16fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 1200px;
+  min-height: 550px;
+  margin: 0 auto;
+  background: #6f805f;
+  border: 1px solid #344334;
+}
+
+.horse-info {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 14px 10px;
+}
+
+.horse-info p {
+  margin: 0;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-size: clamp(13px, 1.2vw, 17px);
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.horse-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 175px;
+  object-fit: cover;
+  border: 2px solid #263229;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  .horse-board {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .horse-info {
+    min-height: 150px;
+    padding: 22px 18px;
+  }
+
+  .horse-info p {
+    font-size: 16px;
+  }
+
+  .horse-photo {
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .arabian { grid-row: 1; }
+  .arabian-text { grid-row: 2; }
+  .friesian { grid-row: 3; }
+  .friesian-text { grid-row: 4; }
+  .beach { grid-row: 5; }
+  .beach-text { grid-row: 6; }
+  .andalusian { grid-row: 7; }
+  .andalusian-text { grid-row: 8; }
+  .mountain { grid-row: 9; }
+  .mountain-text { grid-row: 10; }
+  .wild { grid-row: 11; }
+  .wild-text { grid-row: 12; }
+}
