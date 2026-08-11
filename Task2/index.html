@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  
+  <div class="image-section">
+    <img src="img/doctor.png" alt="Doctor">
+  </div>
+
+  <div class="form-section">
+    <h1>Doctor Appointment Form</h1>
+    <hr class="divider">
+
+    <div class="form-row">
+      <div class="label">Appointment<br>Date</div>
+      <div class="field"><input type="date" placeholder="date"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Appointment<br>Time</div>
+      <div class="field"><input type="time" placeholder="time"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Name</div>
+      <div class="field">
+        <input type="text" placeholder="First">
+        <input type="text" placeholder="Last">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Gender</div>
+      <div class="field">
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female" checked> Female</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Phone</div>
+      <div class="field"><input type="text" placeholder="####"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Address</div>
+      <div class="field">
+        <input type="text" placeholder="city">
+        <input type="text" placeholder="state">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Your Query</div>
+      <div class="field"><textarea placeholder="Describe your query..."></textarea></div>
+    </div>
+
+    <div class="form-row">
+      <div class="label">Appointment<br>Type</div>
+      <div class="field">
+        <div class="checkbox-note">Select which appointment type(s) you require</div>
+        <div class="checkbox-list">
+          <label><input type="checkbox" checked> Cervix checkup</label>
+          <label><input type="checkbox" checked> Heart checkup</label>
+          <label><input type="checkbox"> Eye check-up</label>
+          <label><input type="checkbox"> Hearing Test</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-send">Send</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
